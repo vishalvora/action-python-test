@@ -10,7 +10,7 @@ a = {'data':{
   'store_id':'500'
 }}
 
-y = requests.post('https://strapi4-applist.herokuapp.com/api/applists', json = a)
+y = requests.post('https://strapi4-applist2.herokuapp.com/api/applists', json = a)
 print(y)
 print(y.json())
 
