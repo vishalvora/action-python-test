@@ -7,10 +7,10 @@ x = requests.get('https://strapi4-dataline4.herokuapp.com/api/clinics/1')
 print(x.json())
 a = {'data':{
   'name':'test from github action',
-  'type':'test'
+  'age':500
 }}
 
-y = requests.post('https://strapi4-dataline4.herokuapp.com/api/clinics', data = a)
+y = requests.post('https://strapi4-dataline4.herokuapp.com/api/patients', json = a)
 print(y)
 print(y.json())
 
