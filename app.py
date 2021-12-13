@@ -12,5 +12,6 @@ a = {'data':{
 
 y = requests.post('https://strapi4-dataline4.herokuapp.com/api/clinics', data = a)
 print(y)
+print(y.json())
 
 print('data fetching completed')
