@@ -1,4 +1,4 @@
-import requests os
+import requests, os
 
 print('this msg is from python')
 print('getting data')
