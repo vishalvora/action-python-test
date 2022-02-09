@@ -10,6 +10,10 @@ from os import walk
 filenames = next(walk(os.getcwd()), (None, None, []))[2]
 print(filenames)
 
+with open('requrement.txt') as f:
+    lines = f.readlines()
+    print(lines)
+    
 x = requests.get('https://strapi4-dataline4.herokuapp.com/api/clinics/1')
 print(x.json())
 a = {'data':{
