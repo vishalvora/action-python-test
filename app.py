@@ -10,7 +10,7 @@ from os import walk
 filenames = next(walk(os.getcwd()), (None, None, []))[2]
 print(filenames)
 
-with open('requrement.txt') as f:
+with open(os.getcwd() + '/requrement.txt') as f:
     lines = f.readlines()
     print(lines)
     
