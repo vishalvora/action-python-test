@@ -13,7 +13,7 @@ print(filenames)
 for f in os.listdir():
     print(f)
     
-with open('/requirements.txt') as f:
+with open('requirements.txt') as f:
     lines = f.readlines()
     print(lines)
     
