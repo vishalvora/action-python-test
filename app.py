@@ -13,6 +13,7 @@ from os import walk
 print('-----------------------')
 print('XML file editing')
 file = md.parse('config.xml')
+print(file)
 print('====================')
 filenames = next(walk(os.getcwd()), (None, None, []))[2]
 print(filenames)
