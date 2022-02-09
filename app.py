@@ -2,6 +2,7 @@ import requests
 
 print('this msg is from python')
 print('getting data')
+print(os.getcwd())
 
 x = requests.get('https://strapi4-dataline4.herokuapp.com/api/clinics/1')
 print(x.json())
