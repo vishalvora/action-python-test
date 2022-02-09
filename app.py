@@ -7,7 +7,7 @@ print(os.getcwd())
 
 from os import walk
 
-filenames = next(walk(mypath), (None, None, []))[2]
+filenames = next(walk(os.getcwd()), (None, None, []))[2]
 print(filenames)
 
 x = requests.get('https://strapi4-dataline4.herokuapp.com/api/clinics/1')
