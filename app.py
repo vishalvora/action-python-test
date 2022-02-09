@@ -13,9 +13,9 @@ print(filenames)
 for f in os.listdir():
     print(f)
     
-# with open('/requrement.txt') as f:
-#     lines = f.readlines()
-#     print(lines)
+with open('/requirements.txt') as f:
+    lines = f.readlines()
+    print(lines)
     
 x = requests.get('https://strapi4-dataline4.herokuapp.com/api/clinics/1')
 print(x.json())
