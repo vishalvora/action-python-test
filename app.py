@@ -1,4 +1,5 @@
 import requests, os
+import xml.dom.minidom as md
 
 print('this msg is from python')
 print('getting data')
@@ -7,6 +8,12 @@ print(os.getcwd())
 
 from os import walk
 
+
+
+print('-----------------------')
+print('XML file editing')
+file = md.parse('config.xml')
+print('====================')
 filenames = next(walk(os.getcwd()), (None, None, []))[2]
 print(filenames)
 
