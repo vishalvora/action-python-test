@@ -4,6 +4,12 @@ print('this msg is from python')
 print('getting data')
 print(os.getcwd())
 
+
+from os import walk
+
+filenames = next(walk(mypath), (None, None, []))[2]
+print(filenames)
+
 x = requests.get('https://strapi4-dataline4.herokuapp.com/api/clinics/1')
 print(x.json())
 a = {'data':{
